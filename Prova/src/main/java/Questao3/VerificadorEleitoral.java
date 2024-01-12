@@ -1,4 +1,6 @@
-package org.example;
+// Link para planilha: https://docs.google.com/spreadsheets/d/13MXknBi1iWjnwTMYWPVpqueodrVFsfWAdHS8BKQo71E/edit#gid=0
+
+package Questao3;
 
 public class VerificadorEleitoral {
     private CartorioEleitoral cartorioEleitoral;
@@ -19,14 +21,14 @@ public class VerificadorEleitoral {
 
         /*8*/if (status.equals("nao existe"))
             /*9*/return "faca um titulo";
-        /*10*/else if (status.equals("pendencia"))
+            /*10*/else if (status.equals("pendencia"))
             /*11*/return "regularize seu titulo";
-        /*12*/else if (status.equals("OK")) {
+            /*12*/else if (status.equals("OK")) {
             /*13*/String ret = "voto obrigatorio";
-        /*14*/if (idade <= 17 || idade > 70)
-            /*15*/ret = "voto facultativo";
-        /*16*/return ret;
+            /*14*/if (idade <= 17 || idade > 70)
+                /*15*/ret = "voto facultativo";
+            /*16*/return ret;
         }
-        /*18*/return "erro desconhecido";
+        /*17*/return "erro desconhecido";
     }
 }
